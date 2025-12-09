@@ -1,0 +1,150 @@
+/* Palet Warna: Dark Teal (#1a535c) & Gold (#ffc300) */
+
+/* Body & Font */
+body {
+    background-color: #f4f7f6; /* Latar belakang terang, sedikit keabu-abuan */
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Anda bisa menambahkan font Poppins melalui Google Fonts di HTML */
+}
+
+/* Navigasi */
+.navbar-dark.bg-dark {
+    background-color: #1a535c !important; /* Dark Teal sebagai warna utama navigasi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-pills .nav-link {
+    color: #f4f7f6;
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+    color: #ffc300; /* Gold saat di-hover */
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #ffc300; /* Gold sebagai indikator aktif */
+    color: #1a535c; /* Teks Dark Teal pada tombol aktif */
+    font-weight: bold;
+}
+
+/* Header & Hero Section */
+.hero-section {
+    /* Gradien dari Dark Teal ke Teal yang lebih cerah */
+    background: linear-gradient(135deg, #1a535c 0%, #4ecdc4 100%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px !important;
+}
+
+.hero-section h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Header Kategori */
+/* Tambahkan sedikit overlay gelap agar teks putih lebih menonjol */
+.category-header-pria, .category-header-wanita, .category-header-unisex {
+    min-height: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px !important;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-header-pria::after, .category-header-wanita::after, .category-header-unisex::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay gelap */
+    border-radius: 10px;
+    z-index: -1;
+}
+
+/* Kartu Produk */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.product-card:hover {
+    transform: translateY(-8px); /* Sedikit lebih jauh */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card .card-img-top {
+    height: 200px; 
+    object-fit: cover;
+}
+
+/* Tombol Order Kustom */
+.btn-cool-order {
+    background-color: #ffc300; /* Gold */
+    color: #1a535c; /* Dark Teal */
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-cool-order:hover {
+    background-color: #e6b000; /* Gold lebih gelap */
+    transform: scale(1.03);
+    color: #0d363d;
+}
+
+/* Kartu Kategori di Halaman Home */
+.category-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.category-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: #ffc300;
+}
+
+/* Placeholder Map & Kontak */
+.map-placeholder {
+    background-color: #e6f3f0; /* Teal sangat muda */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #1a535c;
+    border: 2px solid #1a535c;
+}
+
+.card h5.text-primary {
+    color: #1a535c !important; /* Dark Teal untuk judul kontak */
+}
+
+.card-text .fa-map-marker-alt { color: #e74c3c !important; } /* Merah */
+.card-text .fa-phone { color: #2ecc71 !important; } /* Hijau */
+.card-text .fa-clock { color: #f39c12 !important; } /* Oranye */
+
+.btn-dark {
+    background-color: #1a535c;
+    border-color: #1a535c;
+}
+
+.btn-dark:hover {
+    background-color: #4ecdc4;
+    border-color: #4ecdc4;
+}
+
+/* Footer */
+footer.bg-dark {
+    background-color: #1a535c !important;
+    border-top: 5px solid #ffc300;
+}
